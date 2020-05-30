@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADMIN LOGIN</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body  {
+  background-image: url("classroom.jpg");
+  background-size: 100% 190%;
+  background-repeat: no-repeat;
+  
+}
+a{
+    background-color: #DCDCDC;
+     padding: 10px 20px;
+  text-align: center;
+    text-decoration: none;
+}
+h1{
+    background-color: #A0522D;
+}
+
+</style>
+<script type="text/javascript">
+    function openWin(){
+        var admin=document.getElementById("id").value;
+        var pass=document.getElementById("adminpass").value;
+        if(admin==="ADMIN"&&pass==="12345")
+        window.open("adminlist.html");
+    else
+        window.alert("Invalid ID or password");
+    }
+</script>
+</head>
+<body>
+<center> <h1> <font color="white"> ONLINE ATTENDANCE SYSTEM</font></h1>
+    <br><br>
+    <font size="4em" face="comic sans"><a href="index.html"><B>HOME</B></a></font>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font size="4em" face="comic sans"><a href="adminlogin.html"><B>ADMIN</B></a></font>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font size="4em" face="comic sans"><a href="hodlogin.jsp"><B>DEPARTMENT</B></a></font>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font size="4em" face="comic sans"><a href="facultylogin.jsp"><B>FACULTY</B></a></font>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font size="4em" face="comic sans"><a href="studentlogin.jsp"><B>STUDENT</B></a></font>
+<br><br>
+<br><br>
+<h2> <font color="blue"><b><u>ADMIN LOGIN</u>&nbsp;&nbsp;&nbsp;</b> </font></h2>
+<br>
+<h3><b><u><font size="4em"> Login Details</font></u></b></h3>
+<form method="post">
+  <div>
+      <label for="id"><font size="4em" color="#8B0000"><b>Admin ID:</b></font></label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="id" name="admin" size="30">
+   
+  </div>
+    <br>
+  <div>
+      <label for="adminpass"><font size="4em" color="#8B0000"><b>Password:</b></font></label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="password" id="adminpass" name="adminpass" size="30">
+  </div>
+    
+    <br>
+    <input type="submit" value="LOGIN" onclick="openWin()">
+</form>
+</center>
+</body>
+</html>
